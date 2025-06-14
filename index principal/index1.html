@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Inicio - CURVY</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index1.html">Curvy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation" >
+
+          <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index1.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="producto.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+
+        <header class="encabezado">
+    <form class="buscador">
+      <input type="text" placeholder="Buscar productos..." name="search">
+      <button type="submit">🔍</button>
+    </nav>
+  </header>
+
+
+  <main class="container my-5">
+  <section class="intro text-center mb-5">
+    <h1>Bienvenidos a Curvy</h1>
+    <p>Moda cómoda y a la medida para todas las tallas. ¡Descubrí lo que tenemos para vos!</p>
+    <a href="producto.html" class="btn btn-primary">Comprar ahora</a>
+  </section>
+
+  <div id="carrusel-contenido">
+    <div id="carrusel-caja">
+
+      <div class="carrusel-elemento">
+        <img class="imagenes" src="C:\Users\pc usuario\Desktop\CAMPERAS.png" alt="camperas">
+      </div>
+
+      <div class="carrusel-elemento">
+        <img class="imagenes" src="C:\Users\pc usuario\Desktop\PANTALONES.png" alt="pantalones">
+      </div>
+
+      <div class="carrusel-elemento">
+        <img class="imagenes" src="C:\Users\pc usuario\Desktop\REMERAS.png" alt="remeras">
+      </div>
+
+    </div>
+  </div>
+</main>
+
+
+    <!-- GALERÍA -->
+<section class="container my-5">
+  <h2 class="text-center mb-4">Productos Destacados</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <!-- Producto 1 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="C:\Users\pc usuario\Desktop\CM 73330\imagenes\vestido rosa.jpeg" class="card-img-top" alt="Vestido Rosa">
+        <div class="card-body">
+          <h5 class="card-title">Vestido Rosa</h5>
+          <p class="card-text">$25.000</p>
+          <a href="carrito.html" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src= "C:\Users\pc usuario\Desktop\CM 73330\imagenes\blusa floral.jpg"class="card-img-top" alt="Blusa Floral">
+        <div class="card-body">
+          <h5 class="card-title">Blusa Floral</h5>
+          <p class="card-text">$12.500</p>
+          <a href="carrito.html" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="col">
+      <div class="card h-100">
+        <img src="C:\Users\pc usuario\Desktop\CM 73330\imagenes\jeans skynny.jpg"
+         class="card-img-top" alt="Jeans Skinny">
+        <div class="card-body">
+          <h5 class="card-title">Jeans Skinny</h5>
+          <p class="card-text">$30.000</p>
+          <a href="carrito.html" class="btn btn-primary">Agregar al carrito</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section class="mt-5 text-center">
+      <h2>Ofertas de Temporada</h2>
+      <p>¡Hasta 30% off en productos seleccionados!</p>
+    </section>
+
+ <section class="contact-form my-5">
+  <h2 class="text-center mb-4">Contacto</h2>
+  <form action="#" method="post" class="formulario-contacto mx-auto p-4 border rounded shadow-sm">
+    
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" id="nombre" name="nombre" class="form-control campo" placeholder="Tu nombre" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" id="email" name="email" class="form-control campo" placeholder="Tu email" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="mensaje" class="form-label">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" class="form-control campo" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary mt-3">Enviar mensaje</button>
+    </div>
+
+  </form>
+</section>
+
+  </main>
+
+  <footer class="bg-light text-center py-4 mt-5">
+    <p>&copy; 2025 Curvy - Seguinos en redes sociales</p>
+    <div>
+      <a href="https://www.instagram.com/"> Instagram </a> |
+      <a href="https://www.facebook.com/?locale=es_LA">Facebook</a> |
+      <a href="https://www.tiktok.com/es/">TikTok </a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
