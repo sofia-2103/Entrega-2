@@ -1,4 +1,19 @@
 .titulo {
 
-    
+     :root {
+            --primary-color: #d63384;
+            --secondary-color: #6f42c1;
+            --accent-color: #fd7e14;
+            --text-dark: #2d3748;
+            --text-light: #718096;
+            --bg-light: #f7fafc;
+            --bg-pink: #fdf2f8;
+            --white: #ffffff;
+            --gold: #fbbf24;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 25px rgba(0, 0, 0, 0.15);
+            --border-radius: 1rem;
+            --transition: all 0.3s ease;
+        }
 }
