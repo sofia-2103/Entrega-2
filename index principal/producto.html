@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -79,4 +80,87 @@
   </script>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Productos - Renovación | Curvy </title>
+  <link href="https://cdn.jsdelivr.negpm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="style.css" >
+  </head>
+<body>
+  <header class="main-header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index1.html">Curvy</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index1.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="message-box">
+    <h2>✨ ¡Estamos renovando nuestros productos! ✨</h2>
+    <p class="lead">Próxima temporada en camino. Volvemos con nuevas prendas y muchas sorpresas.</p>
+    <p>La tienda volverá a estar disponible en:</p>
+    <div id="countdown">Cargando...</div>
+  </div>
+
+  <footer class="text-center mt-5">
+    <p>&copy; 2025 Curvy - Seguinos en redes sociales</p>
+    <div>
+      <a href="#">Instagram</a> |
+      <a href="#">Facebook</a> |
+      <a href="#">TikTok</a>
+    </div>
+  </footer>
+
+  <script>
+    // Cuenta regresiva de 10 días (en milisegundos)
+    const countdownDate = new Date();
+    countdownDate.setDate(countdownDate.getDate() + 10);
+
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const distance = countdownDate.getTime() - now;
+
+      if (distance < 0) {
+        countdownElement.innerHTML = "¡Ya volvimos!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    updateCountdown(); // Llamar una vez al cargar
+    setInterval(updateCountdown, 1000); // Actualizar cada segundo
+  </script>
+
+</body>
+>>>>>>> b817e3a28027855e77f8d0ccbf92704635f61a63
 </html>
